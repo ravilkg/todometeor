@@ -1,0 +1,39 @@
+/* CSS declarations go here */
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: auto;
+}
+
+input {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+.queryText {
+    width: 40%;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 15px;
+    text-align: center;
+    border: 3px solid #73AD21;
+}
+
+.searchresult {
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px;
+    border-top-color: gray;
+}

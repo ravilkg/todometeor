@@ -1,0 +1,38 @@
+<body>
+<div class="container">
+    {{> searchBar}}
+    <header>
+        <h2>По вашему запросу найдено</h2>
+    </header>
+    <ul>
+        {{#each cars}}
+            {{> car}}
+        {{/each}}
+    </ul>
+</div>
+</body>
+
+<template name="images">
+    
+</template>
+
+<template name="car">
+    <div class="searchresult">
+        <li>{{make}} {{model}} {{year}}</li>
+    </div>
+</template>
+
+<template name="searchBar">
+    <header>
+        <form class="queryForm">
+            <h2>Поиск авто</h2>
+            <input name="queryText"
+                   class="queryText"
+                   type="search"
+                   placeholder="Например: honda accord 2015"/>
+            <input name="querySubmit"
+                   type="submit"
+                   value="Искать"/>
+        </form>
+    </header>
+</template>
